@@ -79,7 +79,7 @@ export function MembershipCard({ level = 'gold', points = 0 }) {
     <div className={`bg-gradient-to-br ${currentLevel.color} rounded-xl p-4 text-white`}>
       <div className="flex items-center justify-between mb-4">
         <div>
-          <p className="text-xs opacity-80">大众点评会员</p>
+          <p className="text-xs opacity-80">点评 Source会员</p>
           <h3 className="text-lg font-bold">{currentLevel.name}</h3>
         </div>
         <span className="text-3xl">💎</span>

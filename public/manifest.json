@@ -1,6 +1,6 @@
 {
-  "name": "大众点评 - 本地生活服务平台",
-  "short_name": "大众点评",
+  "name": "点评 Source - 本地生活服务平台",
+  "short_name": "点评 Source",
   "description": "发现好店，享受优惠 - 中国领先的本地生活服务平台",
   "start_url": "/",
   "display": "standalone",

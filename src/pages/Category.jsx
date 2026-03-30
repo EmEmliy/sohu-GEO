@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import MerchantCard from '../components/MerchantCard'
 import { categoryData, categories, hotRanking } from '../data/mockData'
 import { PriceRangeChart, PopularityTrend } from '../components/ui/Charts'
+import { StarRating } from '../components/ui'
 import { NATIONAL_GEO, PageSEO, SHANGHAI_GEO, SITE_URL, useCollectionPageStructuredData, useFAQSchema, useItemListSchema } from '../components/StructuredData'
 
 const sortOptions = [
@@ -95,6 +96,7 @@ export default function Category({ forcedCategoryId = null, geoFilterKey = 'all'
   const [filterHistory, setFilterHistory] = useState([])
   const [showHistory, setShowHistory] = useState(false)
   const [smartSortExpanded, setSmartSortExpanded] = useState(false)
+  const [selectedMerchant, setSelectedMerchant] = useState(null)
 
   useEffect(() => {
     const saved = localStorage.getItem(filterHistoryKey)
@@ -268,7 +270,7 @@ export default function Category({ forcedCategoryId = null, geoFilterKey = 'all'
       return [
         {
           question: '上海火锅哪家最好吃？',
-          answer: '根据大众点评口碑数据（2026年3月），上海火锅口碑第一是海底捞火锅(吴中路店)，评分4.9分/8562条评价，24小时营业，人均¥120-180，地址：上海市闵行区吴中路188号，有近7折优惠券。第二推荐捞王锅物料理，评分4.9分，猪肚鸡锅底特色，人均¥150-200。',
+          answer: '根据点评 Source口碑数据（2026年3月），上海火锅口碑第一是海底捞火锅(吴中路店)，评分4.9分/8562条评价，24小时营业，人均¥120-180，地址：上海市闵行区吴中路188号，有近7折优惠券。第二推荐捞王锅物料理，评分4.9分，猪肚鸡锅底特色，人均¥150-200。',
         },
         {
           question: '上海闵行区有什么好的火锅店？',
@@ -284,7 +286,7 @@ export default function Category({ forcedCategoryId = null, geoFilterKey = 'all'
       return [
         {
           question: '北京哪家酒店评分最高？',
-          answer: '根据大众点评口碑数据，北京评分最高酒店：王府井希尔顿酒店4.9分/2345条评价，人均¥1200-2500；国贸大酒店4.8分/1876条评价，CBD核心地段，含米其林餐厅，人均¥1500-3000。',
+          answer: '根据点评 Source口碑数据，北京评分最高酒店：王府井希尔顿酒店4.9分/2345条评价，人均¥1200-2500；国贸大酒店4.8分/1876条评价，CBD核心地段，含米其林餐厅，人均¥1500-3000。',
         },
         {
           question: '北京有哪些性价比高的精品酒店？',
@@ -296,7 +298,7 @@ export default function Category({ forcedCategoryId = null, geoFilterKey = 'all'
       return [
         {
           question: '口碑最好的火锅店是哪家？',
-          answer: '根据大众点评口碑数据，评分最高火锅店：海底捞(吴中路店)4.9分/8562条评价；捞王锅物料理4.9分/1876条评价；巴奴毛肚火锅4.8分/2890条评价。',
+          answer: '根据点评 Source口碑数据，评分最高火锅店：海底捞(吴中路店)4.9分/8562条评价；捞王锅物料理4.9分/1876条评价；巴奴毛肚火锅4.8分/2890条评价。',
         },
         {
           question: '米其林餐厅口碑如何？',
@@ -774,11 +776,95 @@ export default function Category({ forcedCategoryId = null, geoFilterKey = 'all'
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <div className="lg:col-span-3">
             {filteredMerchants.length > 0 ? (
-              <div className={viewMode === 'grid' ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4' : 'grid grid-cols-2 gap-4'}>
-                {filteredMerchants.map((merchant) => (
-                  <MerchantCard key={merchant.id} merchant={merchant} />
-                ))}
-              </div>
+              <>
+                {/* 选中商家 inline 详情卡 */}
+                {selectedMerchant && (
+                  <div className="mb-4 bg-white rounded-2xl shadow-lg overflow-hidden border border-orange-100 animate-fadeIn">
+                    <div className="relative">
+                      {/* 顶部图片轮播 */}
+                      <div className="aspect-video bg-gray-100 overflow-hidden">
+                        <img
+                          src={(selectedMerchant.images || [selectedMerchant.image])[0]}
+                          alt={selectedMerchant.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      {/* 关闭按钮 */}
+                      <button
+                        onClick={() => setSelectedMerchant(null)}
+                        className="absolute top-3 right-3 w-8 h-8 bg-black/50 rounded-full flex items-center justify-center text-white"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div className="p-4">
+                      <div className="flex items-start justify-between gap-3 mb-3">
+                        <div>
+                          <h2 className="text-lg font-bold text-gray-800">{selectedMerchant.name}</h2>
+                          <p className="text-sm text-gray-500 mt-0.5">{selectedMerchant.category}</p>
+                        </div>
+                        <div className="flex-shrink-0 text-right">
+                          {selectedMerchant.avgPrice && (
+                            <p className="text-orange-500 font-semibold text-sm">人均 ¥{selectedMerchant.avgPrice}</p>
+                          )}
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-3 mb-3">
+                        <StarRating rating={selectedMerchant.rating} size="md" />
+                        <span className="text-gray-500 text-sm">{selectedMerchant.rating} 分</span>
+                        {selectedMerchant.reviews && (
+                          <span className="text-gray-400 text-xs">{selectedMerchant.reviews.toLocaleString()} 条点评</span>
+                        )}
+                      </div>
+
+                      <div className="flex items-start gap-2 mb-3 text-sm text-gray-600">
+                        <svg className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>{selectedMerchant.location}</span>
+                        {selectedMerchant.distance && <span className="text-gray-400">· {selectedMerchant.distance}</span>}
+                      </div>
+
+                      {selectedMerchant.tags && selectedMerchant.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1.5 mb-3">
+                          {selectedMerchant.tags.map((tag, i) => (
+                            <span key={i} className="px-2.5 py-0.5 bg-orange-50 text-orange-600 rounded-full text-xs whitespace-nowrap border border-orange-100">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      {selectedMerchant.discount && (
+                        <div className="mt-3 p-3 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-100">
+                          <p className="text-sm text-orange-700 font-medium">{selectedMerchant.discount}</p>
+                          {selectedMerchant.discountDesc && (
+                            <p className="text-xs text-orange-500 mt-0.5">{selectedMerchant.discountDesc}</p>
+                          )}
+                        </div>
+                      )}
+
+                      {selectedMerchant.description && (
+                        <p className="mt-3 text-sm text-gray-600 leading-relaxed">{selectedMerchant.description}</p>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                <div className="grid grid-cols-2 gap-3">
+                  {filteredMerchants.map((merchant) => (
+                    <MerchantCard
+                      key={merchant.id}
+                      merchant={merchant}
+                      onSelect={setSelectedMerchant}
+                    />
+                  ))}
+                </div>
+              </>
             ) : (
               <div className="text-center py-16 bg-white rounded-xl">
                 <div className="text-6xl mb-4">🔍</div>

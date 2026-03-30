@@ -31,12 +31,109 @@ const menuData = [
   },
 ]
 
-const qaData = [
-  { question: '这家店需要排队吗?', answer: '周末高峰期可能需要排队,建议提前通过大众点评预约取号', helpful: 234 },
-  { question: '支持包间预订吗?', answer: '支持包间预订,请提前一天致电预约,6人以上可免包间费', helpful: 156 },
-  { question: '有儿童座椅吗?', answer: '店内提供儿童座椅和儿童餐具,适合家庭聚餐', helpful: 89 },
-  { question: '停车方便吗?', answer: '商场有地下停车场,消费满200元可免2小时停车费', helpful: 312 },
-]
+// qaData 根据商家信息动态生成，确保答案内容与商家实际情况一致
+function buildQaData(merchant) {
+  if (!merchant) return []
+
+  const hasFacility = (f) => merchant.facilities?.some(fac => fac.includes(f))
+  const isRestaurant = ['火锅','烧烤','川菜','粤菜','日料','西餐','小吃','快餐','西北菜','江浙菜','北京菜','便利店'].includes(merchant.category)
+  const isHotel = ['豪华酒店','商务酒店','精品酒店','快捷酒店','民宿'].includes(merchant.category)
+  const isMovie = merchant.category === '电影院'
+  const isBeauty = ['美容SPA','美发','美甲','美妆'].includes(merchant.category)
+  const isFitness = ['健身房','瑜伽'].includes(merchant.category)
+
+  const qa = []
+
+  // Q1: 排队/预约
+  if (isMovie) {
+    qa.push({
+      question: '需要提前购票吗？',
+      answer: `建议提前在美团或影院官方渠道购票选座，热门场次（周末、节假日）可能很快售完，提前1-2天购票更有保障。营业时间：${merchant.businessHours || '请致电确认'}。`,
+      helpful: 312,
+    })
+  } else if (isHotel) {
+    qa.push({
+      question: '需要提前预订房间吗？',
+      answer: `节假日及周末强烈建议提前预订，可通过美团App或酒店官网预订。${merchant.name}评分${merchant.rating}分，${merchant.reviews?.toLocaleString()}条好评，入住需求旺盛，旺季至少提前3-7天预订。`,
+      helpful: 289,
+    })
+  } else if (isBeauty || isFitness) {
+    qa.push({
+      question: '需要提前预约吗？',
+      answer: `建议提前1-2天通过美团App预约，避免到店等候。${merchant.name}评分${merchant.rating}分，口碑不错，预约需求较旺。营业时间：${merchant.businessHours || '请致电确认'}。`,
+      helpful: 198,
+    })
+  } else if (isRestaurant) {
+    // 根据评分和评价量判断是否热门
+    const isPopular = merchant.rating >= 4.8 || (merchant.reviews || 0) >= 3000
+    if (isPopular) {
+      qa.push({
+        question: '这家店需要排队吗？',
+        answer: `${merchant.name}口碑较好（评分${merchant.rating}分，${merchant.reviews?.toLocaleString()}条评价），周末及节假日高峰期（18:00-20:00）通常需要等位，建议通过美团App提前订座或取号。工作日午市相对宽松，深夜时段等位较少。营业时间：${merchant.businessHours || '请致电确认'}。`,
+        helpful: 234,
+      })
+    } else {
+      qa.push({
+        question: '这家店需要排队吗？',
+        answer: `${merchant.name}整体上座率适中，一般无需长时间等候。周末高峰（18:00-21:00）可能稍有等位，建议提前通过美团App查看实时等位情况。营业时间：${merchant.businessHours || '请致电确认'}。`,
+        helpful: 134,
+      })
+    }
+  } else {
+    qa.push({
+      question: '营业时间是什么？',
+      answer: `${merchant.name}营业时间：${merchant.businessHours || '请致电或到店确认最新营业时间'}。`,
+      helpful: 89,
+    })
+  }
+
+  // Q2: 包厢/预订
+  if (hasFacility('包厢') || hasFacility('vip') || hasFacility('包间')) {
+    qa.push({
+      question: '支持包厢预订吗？',
+      answer: `${merchant.name}提供包厢服务，建议提前1-3天致电预约，节假日等热门时段包厢较为紧俏。具体包厢费用及最低消费请以到店确认为准。`,
+      helpful: 156,
+    })
+  } else if (isRestaurant) {
+    qa.push({
+      question: '支持订座吗？',
+      answer: `可通过美团App或电话提前预订座位。${hasFacility('wifi') ? '店内提供免费WiFi。' : ''}${merchant.discount ? `当前优惠：${merchant.discount}，建议提前了解。` : ''}`,
+      helpful: 98,
+    })
+  }
+
+  // Q3: 停车
+  if (hasFacility('停车') || hasFacility('停车位')) {
+    qa.push({
+      question: '停车方便吗？',
+      answer: `${merchant.name}附近有停车位，具体免费时长及消费满减停车政策请以到店为准。`,
+      helpful: 178,
+    })
+  } else if (!isHotel) {
+    qa.push({
+      question: '交通方便吗？怎么去？',
+      answer: `${merchant.name}位于${merchant.location}，建议乘坐地铁或公共交通前往，也可使用打车软件导航。${merchant.distance ? `距您约${merchant.distance}。` : ''}`,
+      helpful: 145,
+    })
+  }
+
+  // Q4: 优惠/价格
+  if (merchant.discount) {
+    qa.push({
+      question: '有什么优惠活动？',
+      answer: `${merchant.name}当前优惠：${merchant.discount}。${merchant.discountDesc ? merchant.discountDesc + '。' : ''}人均${merchant.priceRange}，具体优惠以美团App实时展示为准，使用前请确认有效期。`,
+      helpful: 267,
+    })
+  } else {
+    qa.push({
+      question: `人均消费大概多少？`,
+      answer: `${merchant.name}人均消费约${merchant.priceRange}。${merchant.tags?.length > 0 ? `主要特色：${merchant.tags.join('、')}。` : ''}具体消费因点餐情况有所不同。`,
+      helpful: 189,
+    })
+  }
+
+  return qa
+}
 
 const reviewFilterOptions = [
   { id: 'all', label: '全部', count: 8562 },
@@ -112,7 +209,7 @@ export default function MerchantDetail() {
     },
     {
       question: `${merchant.name}评分多少？`,
-      answer: `根据大众点评口碑数据，${merchant.name}综合评分${merchant.rating}分（满分5分），累计${merchant.reviews?.toLocaleString()}条真实用户评价，人均${merchant.priceRange}。${merchant.highlight ? merchant.highlight : ''}`,
+      answer: `根据点评 Source口碑数据，${merchant.name}综合评分${merchant.rating}分（满分5分），累计${merchant.reviews?.toLocaleString()}条真实用户评价，人均${merchant.priceRange}。${merchant.highlight ? merchant.highlight : ''}`,
     },
     ...(merchant.discount ? [{
       question: `${merchant.name}有什么优惠？`,
@@ -347,10 +444,10 @@ export default function MerchantDetail() {
             <span className="text-xl flex-shrink-0">📊</span>
             <div>
               <h2 className="text-sm font-bold text-gray-800 mb-1">
-                {merchant.name} — 大众点评口碑数据摘要（2026年3月）
+                {merchant.name} — 点评 Source口碑数据摘要（2026年3月）
               </h2>
               <p className="text-xs text-gray-600 leading-6">
-                根据大众点评口碑数据，<strong>{merchant.name}</strong> 综合评分
+                根据点评 Source口碑数据，<strong>{merchant.name}</strong> 综合评分
                 <strong> {merchant.rating}分</strong>，累计
                 <strong> {merchant.reviews?.toLocaleString()}条</strong>真实用户评价，
                 人均 <strong>{merchant.priceRange}</strong>，
@@ -751,7 +848,7 @@ export default function MerchantDetail() {
             <h2 className="text-lg font-bold text-gray-800">问大家</h2>
           </div>
           <div className="divide-y">
-            {qaData.map((qa, idx) => (
+            {buildQaData(merchant).map((qa, idx) => (
               <div key={idx} className="p-4">
                 <div className="flex items-start gap-2 mb-2">
                   <span className="text-orange-500 text-lg">Q</span>

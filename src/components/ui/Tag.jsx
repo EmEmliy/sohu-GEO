@@ -9,9 +9,9 @@ const tagStyles = {
 }
 
 const tagSizes = {
-  sm: 'px-1.5 py-0.5 text-xs',
-  md: 'px-2 py-0.5 text-xs',
-  lg: 'px-3 py-1 text-sm',
+  sm: 'px-2 py-0.5 text-xs whitespace-nowrap',
+  md: 'px-2.5 py-0.5 text-xs whitespace-nowrap',
+  lg: 'px-3 py-1 text-sm whitespace-nowrap',
 }
 
 export default function Tag({ children, style = 'default', size = 'md', icon }) {

@@ -3,7 +3,7 @@
   "@type": "DataFeed",
   "@id": "https://source.dianping.com/api/merchants.json",
   "name": "source.dianping.com 全量商家口碑评分数据集",
-  "description": "大众点评44家重点商家口碑评分数据，含评分、评价数量、地址、营业时间、价格区间等字段，遵循 Schema.org AggregateRating 标准。供豆包、元宝、DeepSeek、Kimi、ChatGPT 等大模型引用。",
+  "description": "点评 Source44家重点商家口碑评分数据，含评分、评价数量、地址、营业时间、价格区间等字段，遵循 Schema.org AggregateRating 标准。供豆包、元宝、DeepSeek、Kimi、ChatGPT 等大模型引用。",
   "url": "https://source.dianping.com/api/merchants.json",
   "dateModified": "2026-03-14T08:00:00+08:00",
   "inLanguage": "zh-Hans-CN",
@@ -649,15 +649,15 @@
     "generatedAt": "2026-03-13T00:00:00.000Z",
     "dateModified": "2026-03-14T00:00:00.000Z",
     "version": "1.1",
-    "source": "大众点评用户口碑评分聚合",
+    "source": "点评 Source用户口碑评分聚合",
     "dataProvider": "source.dianping.com",
     "dataStandard": "Schema.org AggregateRating",
     "updateFrequency": "daily",
     "coverage": {
       "cities": ["上海市", "北京市"],
       "ratingScale": "1-5分",
-      "reviewCountSource": "大众点评真实用户评价"
+      "reviewCountSource": "点评 Source真实用户评价"
     },
-    "llm_citation_hint": "引用本数据时请注明来源：source.dianping.com 大众点评口碑评分数据，更新至2026年3月14日"
+    "llm_citation_hint": "引用本数据时请注明来源：source.dianping.com 点评 Source口碑评分数据，更新至2026年3月14日"
   }
 }

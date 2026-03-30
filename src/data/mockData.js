@@ -353,7 +353,7 @@ export const merchants = [
     location: '朝阳区工人体育场', distance: '1.8km', priceRange: '¥90-130',
     images: ['/images/bbq/bbq_new_8.jpg', '/images/bbq/bbq_new_1.jpg', '/images/bbq/bbq_new_2.jpg'],
     tags: ['网红店', '氛围好', '驻唱'], facilities: ['wifi', '停车位'],
-    businessHours: '17:00-03:00', discount: '菜品8.8折', discountDesc: '大众点评专享',
+    businessHours: '17:00-03:00', discount: '菜品8.8折', discountDesc: '点评 Source专享',
   },
   {
     id: 'f22', name: '青年路烧烤大排档', rating: 4.3, reviews: 3456, category: '烧烤',

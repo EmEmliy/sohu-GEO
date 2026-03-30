@@ -1,7 +1,7 @@
 {
   "name": "source-dianping",
   "version": "1.0.0",
-  "description": "大众点评生活服务类网站复刻",
+  "description": "点评 Source生活服务类网站复刻",
   "type": "module",
   "scripts": {
     "dev": "vite",

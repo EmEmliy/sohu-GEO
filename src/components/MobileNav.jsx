@@ -1,11 +1,9 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function MobileNav() {
   const location = useLocation()
   const navigate = useNavigate()
-  const [showMore, setShowMore] = useState(false)
-  const [isExpanded, setIsExpanded] = useState(false)
   const touchStartX = useRef(0)
   const touchEndX = useRef(0)
 
@@ -13,21 +11,15 @@ export default function MobileNav() {
     const handleGestureStart = (e) => {
       touchStartX.current = e.touches[0].clientX
     }
-    
     const handleGestureEnd = (e) => {
       touchEndX.current = e.changedTouches[0].clientX
       const diff = touchStartX.current - touchEndX.current
-      
-      if (Math.abs(diff) > 100) {
-        if (diff > 0) {
-          navigate('/category/food')
-        }
+      if (Math.abs(diff) > 100 && diff > 0) {
+        navigate('/category/food')
       }
     }
-
     document.addEventListener('touchstart', handleGestureStart, { passive: true })
     document.addEventListener('touchend', handleGestureEnd, { passive: true })
-    
     return () => {
       document.removeEventListener('touchstart', handleGestureStart)
       document.removeEventListener('touchend', handleGestureEnd)
@@ -56,43 +48,35 @@ export default function MobileNav() {
       ),
     },
     {
-      id: 'favorites',
-      path: '/favorites',
-      label: '收藏',
+      id: 'coupons',
+      path: '/coupons',
+      label: '优惠',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z" />
         </svg>
       ),
     },
     {
-      id: 'profile',
-      path: '/profile',
-      label: '我的',
+      id: 'search',
+      path: '/search',
+      label: '搜索',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
       ),
     },
-  ]
-
-  const quickActions = [
-    { id: 'home', icon: '🏠', label: '首页' },
-    { id: 'food', icon: '🍜', label: '美食' },
-    { id: 'hotel', icon: '🏨', label: '酒店' },
-    { id: 'movie', icon: '🎬', label: '电影' },
-    { id: 'beauty', icon: '💄', label: '丽人' },
-    { id: 'fitness', icon: '🏋️', label: '健身' },
   ]
 
   return (
     <>
       <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50 md:hidden safe-area-bottom">
-        <div className="flex items-center justify-around h-16">
+        <div className="flex items-center justify-around h-14">
           {navItems.map((item) => {
-            const isActive = location.pathname === item.path || 
-              (item.path !== '/' && location.pathname.startsWith(item.path))
+            const isActive = item.path === '/'
+              ? location.pathname === '/'
+              : location.pathname.startsWith(item.path)
             return (
               <Link
                 key={item.id}
@@ -101,7 +85,7 @@ export default function MobileNav() {
                   isActive ? 'text-orange-500' : 'text-gray-500'
                 }`}
               >
-                <span className={`relative ${isActive ? 'text-orange-500' : 'text-gray-400'}`}>
+                <span className={isActive ? 'text-orange-500' : 'text-gray-400'}>
                   {item.icon}
                 </span>
                 <span className="text-xs mt-0.5">{item.label}</span>
@@ -109,43 +93,8 @@ export default function MobileNav() {
             )
           })}
         </div>
-        
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="absolute -top-12 left-1/2 -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-lg active:scale-95 transition-transform"
-        >
-          <svg className={`w-6 h-6 text-white transition-transform ${isExpanded ? 'rotate-45' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-          </svg>
-        </button>
-
-        {isExpanded && (
-          <div className="absolute bottom-full left-0 right-0 bg-white rounded-t-2xl shadow-lg p-4 mb-2 animate-slideUp">
-            <div className="grid grid-cols-6 gap-2">
-              {quickActions.map((action) => (
-                <Link
-                  key={action.id}
-                  to={action.id === 'home' ? '/' : `/category/${action.id}`}
-                  onClick={() => setIsExpanded(false)}
-                  className="flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-orange-50 active:bg-orange-100"
-                >
-                  <span className="text-2xl">{action.icon}</span>
-                  <span className="text-xs text-gray-600">{action.label}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </nav>
-      
-      <div className="h-16 md:hidden" />
-      
-      {isExpanded && (
-        <div 
-          className="fixed inset-0 bg-black/30 z-40 md:hidden"
-          onClick={() => setIsExpanded(false)}
-        />
-      )}
+      <div className="h-14 md:hidden" />
     </>
   )
 }

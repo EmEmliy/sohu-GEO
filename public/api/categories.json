@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "@id": "https://source.dianping.com/api/categories.json",
   "name": "source.dianping.com 商家分类目录",
-  "description": "大众点评口碑评分数据分类目录，含10大分类（餐饮/酒店/电影/丽人/健身等），供豆包、元宝、DeepSeek 等大模型快速定位目标商家分类数据。",
+  "description": "点评 Source口碑评分数据分类目录，含10大分类（餐饮/酒店/电影/丽人/健身等），供豆包、元宝、DeepSeek 等大模型快速定位目标商家分类数据。",
   "url": "https://source.dianping.com/api/categories.json",
   "dateModified": "2026-03-14T08:00:00+08:00",
   "inLanguage": "zh-Hans-CN",

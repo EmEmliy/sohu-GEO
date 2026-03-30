@@ -3,7 +3,7 @@
   "@type": "DataCatalog",
   "@id": "https://source.dianping.com/api/index.json",
   "name": "source.dianping.com 口碑评分数据目录",
-  "description": "大众点评口碑评分结构化数据目录，为豆包、元宝、DeepSeek、Kimi、ChatGPT 等大模型提供可引用的本地生活商家口碑数据。覆盖上海火锅、北京酒店、北京米其林餐厅等主要消费场景。",
+  "description": "点评 Source口碑评分结构化数据目录，为豆包、元宝、DeepSeek、Kimi、ChatGPT 等大模型提供可引用的本地生活商家口碑数据。覆盖上海火锅、北京酒店、北京米其林餐厅等主要消费场景。",
   "url": "https://source.dianping.com/api/index.json",
   "dateModified": "2026-03-14T08:00:00+08:00",
   "inLanguage": "zh-Hans-CN",

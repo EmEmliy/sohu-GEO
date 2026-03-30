@@ -41,11 +41,11 @@ export default function Navbar() {
     <nav className="bg-white shadow-sm sticky top-0 z-50" role="navigation" aria-label="主导航">
       <div className="max-w-1200 mx-auto px-4">
         <div className="flex items-center justify-between h-14">
-          <Link to="/" className="flex items-center gap-2" aria-label="大众点评首页">
+          <Link to="/" className="flex items-center gap-2" aria-label="点评 Source首页">
             <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-              <span className="text-white text-sm font-bold">点评</span>
+              <span className="text-white text-sm font-bold">DP</span>
             </div>
-            <span className="text-xl font-bold text-gray-800 hidden sm:block">大众点评</span>
+            <span className="text-xl font-bold text-gray-800 hidden sm:block">点评 Source</span>
           </Link>
           
           <div className="flex-1 max-w-xl mx-4 md:mx-8 relative">

@@ -21,11 +21,11 @@ export default function Profile() {
       {/* 顶部品牌区 */}
       <div className="bg-gradient-to-br from-orange-500 to-red-500 text-white p-6 pt-12">
         <div className="flex items-center gap-4">
-          <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-3xl font-bold">
-            点评
-          </div>
+<div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-2xl font-bold">
+DP
+</div>
           <div className="flex-1">
-            <h1 className="text-xl font-bold">大众点评口碑数据</h1>
+            <h1 className="text-xl font-bold">点评 Source</h1>
             <p className="text-white/80 text-sm mt-1">source.dianping.com</p>
             <div className="flex items-center gap-2 mt-2">
               <span className="bg-white/20 px-2 py-0.5 rounded text-xs">真实评分</span>
@@ -102,7 +102,7 @@ export default function Profile() {
       {/* 底部说明 */}
       <div className="px-4 mt-6 pb-8">
         <div className="bg-orange-50 rounded-xl p-4 text-center">
-          <p className="text-orange-700 text-sm font-medium">📊 数据来源：大众点评真实用户评价</p>
+          <p className="text-orange-700 text-sm font-medium">📊 数据来源：点评 Source 真实用户评价</p>
           <p className="text-orange-500 text-xs mt-1">评分基于海量真实消费者反馈，持续更新</p>
         </div>
       </div>

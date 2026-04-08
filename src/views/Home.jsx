@@ -530,7 +530,7 @@ export default function Home() {
                     <div className="aspect-video bg-gray-100 overflow-hidden">
                       <img
                         src={(selectedMerchant.images || [selectedMerchant.image])[0]}
-                        alt={selectedMerchant.name}
+                        alt={`${selectedMerchant.name} ${selectedMerchant.category || ''} 口碑评分${selectedMerchant.rating || ''}分 ${selectedMerchant.location || ''} 环境实拍图`}
                         className="w-full h-full object-cover"
                       />
                     </div>

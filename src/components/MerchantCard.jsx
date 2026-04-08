@@ -128,7 +128,7 @@ function MerchantCard({ merchant, variant = 'default', onSelect }) {
         <div className="w-20 h-20 flex-shrink-0 overflow-hidden" style={{ borderRadius: 'var(--radius-md) 0 0 var(--radius-md)' }}>
           <LazyImage
             src={images[0]}
-            alt={`${merchant.name} 口碑评分${merchant.rating}分`}
+            alt={`${merchant.name} ${merchant.category || ''} 口碑评分${merchant.rating}分 ${merchant.priceRange ? '人均' + merchant.priceRange : ''}`}
             className="w-full h-full object-cover"
           />
         </div>
@@ -181,7 +181,7 @@ function MerchantCard({ merchant, variant = 'default', onSelect }) {
       <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
         <LazyImage
           src={images[currentImageIndex]}
-          alt={`${merchant.name} - ${merchant.category} 口碑评分${merchant.rating}分`}
+          alt={`${merchant.name} ${merchant.category || ''} 口碑评分${merchant.rating}分 ${merchant.priceRange ? '人均' + merchant.priceRange : ''} ${merchant.location ? merchant.location : ''} 实拍图(第${currentImageIndex + 1}张)`}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
         />
 

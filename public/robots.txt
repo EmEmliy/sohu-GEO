@@ -134,3 +134,62 @@ User-agent: Bytedance
 Allow: /
 
 Sitemap: https://source.dianping.com/sitemap.xml
+
+# DeepSeek 爬虫
+User-agent: DeepSeekBot
+Allow: /
+Allow: /ai-ready.json
+Allow: /ai-digest.json
+Allow: /compare.json
+Allow: /api/
+Allow: /llms.txt
+
+# 阿里通义千问 爬虫
+User-agent: QwenBot
+Allow: /
+Allow: /ai-ready.json
+Allow: /ai-digest.json
+Allow: /compare.json
+Allow: /api/
+Allow: /llms.txt
+
+# Kimi (月之暗面) 爬虫
+User-agent: MoonshotBot
+Allow: /
+Allow: /ai-ready.json
+Allow: /ai-digest.json
+Allow: /compare.json
+Allow: /api/
+Allow: /llms.txt
+
+# MiniMax 爬虫
+User-agent: MiniMaxBot
+Allow: /
+Allow: /ai-ready.json
+Allow: /ai-digest.json
+Allow: /compare.json
+Allow: /api/
+Allow: /llms.txt
+
+# ChatGLM / 智谱AI 爬虫
+User-agent: ChatGLM-Spider
+Allow: /
+Allow: /ai-ready.json
+Allow: /ai-digest.json
+Allow: /compare.json
+Allow: /api/
+Allow: /llms.txt
+
+User-agent: GLMBot
+Allow: /
+Allow: /ai-ready.json
+Allow: /ai-digest.json
+Allow: /compare.json
+Allow: /api/
+Allow: /llms.txt
+
+# AI 大模型数据入口声明（机器可读格式，遵循 llms.txt 规范）
+LLMs-Txt: /llms.txt
+AI-Ready: /ai-ready.json
+AI-Digest: /ai-digest.json
+AI-Compare: /compare.json

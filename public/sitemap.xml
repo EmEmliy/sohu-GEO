@@ -7,204 +7,204 @@
   <!-- 核心页面 -->
   <url>
     <loc>https://source.dianping.com/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://source.dianping.com/sh/shanghai-hotpot</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://source.dianping.com/coupons</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://source.dianping.com/search</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
 
   <!-- 分类页面 -->
-  <url><loc>https://source.dianping.com/category/food</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/category/hotel</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/category/movie</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
-  <url><loc>https://source.dianping.com/category/beauty</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://source.dianping.com/category/fitness</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://source.dianping.com/category/home</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/category/medical</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/category/shopping</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/category/entertainment</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/category/education</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/category/food</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/category/hotel</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/category/movie</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://source.dianping.com/category/beauty</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/category/fitness</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/category/home</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/category/medical</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/category/shopping</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/category/entertainment</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/category/education</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
 
   <!-- 餐饮商家详情页 (f1-f80) — 口碑评分数据，高优先级 -->
-  <url><loc>https://source.dianping.com/merchant/f1</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f2</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f3</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f4</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f5</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f6</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f7</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f8</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f9</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f10</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f11</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f12</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f13</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f14</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f15</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f16</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f17</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f18</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f19</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f20</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f21</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f22</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f23</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f24</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f25</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f26</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f27</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f28</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f29</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f30</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f31</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f32</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f33</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f34</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f35</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f36</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f37</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f38</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f39</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f40</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f41</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f42</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f43</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f44</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f45</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f46</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f47</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f48</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f49</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f50</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f51</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f52</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f53</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f54</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f55</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f56</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f57</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f58</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f59</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f60</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f61</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f62</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f63</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f64</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f65</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f66</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f67</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f68</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f69</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f70</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f71</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f72</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f73</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f74</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f75</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f76</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f77</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f78</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f79</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/f80</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f1</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f2</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f3</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f4</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f5</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f6</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f7</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f8</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f9</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f10</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f11</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f12</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f13</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f14</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f15</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f16</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f17</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f18</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f19</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f20</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f21</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f22</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f23</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f24</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f25</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f26</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f27</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f28</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f29</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f30</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f31</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f32</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f33</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f34</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f35</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f36</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f37</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f38</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f39</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f40</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f41</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f42</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f43</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f44</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f45</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f46</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f47</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f48</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f49</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f50</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f51</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f52</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f53</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f54</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f55</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f56</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f57</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f58</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f59</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f60</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f61</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f62</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f63</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f64</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f65</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f66</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f67</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f68</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f69</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f70</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f71</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f72</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f73</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f74</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f75</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f76</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f77</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f78</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f79</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/f80</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
 
   <!-- 酒店商家详情页 (h1-h12) -->
-  <url><loc>https://source.dianping.com/merchant/h1</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h2</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h3</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h4</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h5</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h6</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h7</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h8</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h9</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h10</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h11</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/h12</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h1</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h2</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h3</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h4</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h5</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h6</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h7</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h8</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h9</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h10</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h11</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/h12</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
 
   <!-- 电影院商家详情页 (m1-m12) -->
-  <url><loc>https://source.dianping.com/merchant/m1</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m2</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m3</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m4</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m5</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m6</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m7</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m8</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m9</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m10</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m11</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/m12</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m1</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m2</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m3</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m4</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m5</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m6</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m7</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m8</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m9</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m10</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m11</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/m12</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
 
   <!-- 美容商家详情页 (b1-b12) -->
-  <url><loc>https://source.dianping.com/merchant/b1</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b2</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b3</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b4</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b5</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b6</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b7</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b8</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b9</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b10</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b11</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/b12</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b1</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b2</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b3</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b4</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b5</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b6</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b7</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b8</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b9</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b10</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b11</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/b12</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
 
   <!-- 健身商家详情页 (g1-g12) -->
-  <url><loc>https://source.dianping.com/merchant/g1</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g2</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g3</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g4</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g5</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g6</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g7</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g8</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g9</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g10</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g11</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/g12</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g1</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g2</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g3</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g4</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g5</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g6</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g7</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g8</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g9</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.75</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g10</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g11</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/g12</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
 
   <!-- 家政/其他商家详情页 (j1-j12) -->
-  <url><loc>https://source.dianping.com/merchant/j1</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j2</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j3</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j4</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j5</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j6</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j7</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j8</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j9</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j10</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j11</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://source.dianping.com/merchant/j12</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j1</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j2</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j3</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j4</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j5</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j6</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j7</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j8</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j9</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j10</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j11</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://source.dianping.com/merchant/j12</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.65</priority></url>
 
   <!-- 结构化数据 JSON API — 为 AI 爬虫优化（最高优先级） -->
-  <url><loc>https://source.dianping.com/ai-ready.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://source.dianping.com/api/index.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
-  <url><loc>https://source.dianping.com/api/merchants.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
-  <url><loc>https://source.dianping.com/api/categories.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/api/category/food.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
-  <url><loc>https://source.dianping.com/api/category/hotel.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
-  <url><loc>https://source.dianping.com/api/merchant/f1.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://source.dianping.com/api/search.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://source.dianping.com/data.json</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
-  <url><loc>https://source.dianping.com/llms.txt</loc><lastmod>2026-03-14</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
-  <url><loc>https://source.dianping.com/ai-guide.md</loc><lastmod>2026-03-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/ai-ready.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://source.dianping.com/api/index.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://source.dianping.com/api/merchants.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://source.dianping.com/api/categories.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/api/category/food.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://source.dianping.com/api/category/hotel.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+  <url><loc>https://source.dianping.com/api/merchant/f1.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://source.dianping.com/api/search.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://source.dianping.com/data.json</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://source.dianping.com/llms.txt</loc><lastmod>2026-04-08</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://source.dianping.com/ai-guide.md</loc><lastmod>2026-04-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
 </urlset>

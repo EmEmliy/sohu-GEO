@@ -579,7 +579,7 @@ export default function MerchantDetail() {
             <div className="relative aspect-[4/3] md:aspect-auto">
               <img
                 src={images[currentImageIndex]}
-                alt={merchant.name}
+                alt={`${merchant.name} ${merchant.category || ''} 口碑评分${merchant.rating || ''}分 ${merchant.location || ''} 实拍环境图（第${currentImageIndex + 1}张）`}
                 className="w-full h-full object-cover cursor-pointer"
                 onClick={() => setShowAllImages(true)}
               />
@@ -1059,7 +1059,7 @@ export default function MerchantDetail() {
                   <div className="aspect-[4/3]">
                     <img
                       src={m.images?.[0] || m.image}
-                      alt={m.name}
+                      alt={`${m.name} ${m.category || ''} 口碑评分${m.rating || ''}分`}
                       className="w-full h-full object-cover"
                     />
                   </div>

@@ -24,7 +24,7 @@ export default function RecommendationList({ merchants, title = '猜你喜欢' }
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
                 src={merchant.images?.[0] || merchant.image}
-                alt={merchant.name}
+                alt={`${merchant.name} ${merchant.category || ''} 口碑评分${merchant.rating || ''}分 人均${merchant.priceRange || ''}`}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               {merchant.discount && (

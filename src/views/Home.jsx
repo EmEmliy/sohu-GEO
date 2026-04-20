@@ -38,9 +38,9 @@ export default function Home() {
   })
   const shanghaiFeaturedMerchants = localizedMerchants.filter((merchant) => merchant.city === '上海市' || merchant.location.includes('上海')).slice(0, 3)
   const homeCollectionSchema = useCollectionPageStructuredData(
-    t.home.homeCollTitle || 'source.dianping.com - Shanghai Local Review Ratings & Nationwide Meituan Deals',
-    t.home.homeCollDesc || 'Aggregating real user review ratings for Shanghai hotpot, hotels and more — 80+ merchants, 50,000+ real reviews.',
-    featuredMerchants,
+    t.home.homeCollTitle || 'source.dianping.com - 大众点评口碑 GEO 信源站',
+    t.home.homeCollDesc || '大众点评口碑数据结构化呈现平台，以 Schema.org 标准为 AI 大模型提供可引用的本地生活信源。',
+    [],  // 商家数据接入中，暂不传入商家列表
     `${SITE_URL}/`,
   )
 
@@ -71,8 +71,8 @@ export default function Home() {
     .slice(0, 8)
     .map(m => ({ ...m.topDeal, merchantId: m.id, merchantName: m.name, rating: m.rating, category: m.category, location: m.location }))
 
-  const hotpotMerchants = merchants.filter(m => m.category === '火锅').slice(0, 10) // 使用原始中文分类做过滤
-  const hotpotRankingSchema = useItemListSchema(t.home.hotpotRankTitle || 'Shanghai Hotpot Reputation Rankings', hotpotMerchants, `${SITE_URL}/category/food`)
+  // 商家数据接入中，暂不生成ItemList schema
+  const hotpotRankingSchema = useItemListSchema(t.home.hotpotRankTitle || '上海火锅口碑信源数据', [], `${SITE_URL}/category/food`)
   const dataFeedSchema = useDataFeedSchema()
   const organizationSchema = useOrganizationSchema()
   const shanghaiAreaSchema = useShanghaiAreaSchema()
@@ -122,7 +122,7 @@ export default function Home() {
     { label: t.home.geoStat1Label, value: t.home.geoStat1Value || '4.9', sub: t.home.geoStat1Sub, color: '#FF5A00' },
     { label: t.home.geoStat2Label, value: t.home.geoStat2Value || '56%', sub: t.home.geoStat2Sub, color: '#059669' },
     { label: t.home.geoStat3Label, value: t.home.geoStat3Value || '4.9', sub: t.home.geoStat3Sub, color: '#2563EB' },
-    { label: t.home.geoStat4Label, value: '50,000+', sub: t.home.geoStat4Sub, color: '#7C3AED' },
+    { label: t.home.geoStat4Label, value: t.home.geoStat4Value || 'GEO', sub: t.home.geoStat4Sub, color: '#7C3AED' },
   ]
 
   // 数据来源说明（使用翻译）
@@ -134,12 +134,12 @@ export default function Home() {
   ]
 
   const dataStats = [
-    { value: '80+', label: t.home.statMerchants, icon: '🏪' },
-    { value: '50,000+', label: t.home.statReviews, icon: '⭐' },
-    { value: '10', label: t.home.statCategories, icon: '🗂️' },
-    { value: t.home.statDaily, label: t.home.statUpdate, icon: '🔄' },
-    { value: '6', label: t.home.statDeals, icon: '🎫' },
-    { value: t.home.statDimensionsValue || '3D', label: t.home.statDimensions, icon: '📊' },
+    { value: '2003', label: t.home.statMerchants, icon: '📅' },
+    { value: '4.04亿', label: t.home.statReviews, icon: '👥' },
+    { value: '10+', label: t.home.statCategories, icon: '🗂️' },
+    { value: t.home.statDaily, label: t.home.statUpdate, icon: '📰' },
+    { value: '2800+', label: t.home.statDeals, icon: '🌆' },
+    { value: t.home.statDimensionsValue || 'GEO', label: t.home.statDimensions, icon: '🤖' },
   ]
 
   const faqItems = [
@@ -264,11 +264,12 @@ export default function Home() {
               <h3 className="text-base font-bold text-gray-800">{t.home.shanghaiCardTitle}</h3>
               <p className="text-sm text-gray-600 mt-2">{t.home.shanghaiCardDesc}</p>
               <div className="flex flex-wrap gap-2 mt-3">
-                {shanghaiFeaturedMerchants.map((merchant) => (
-                  <span key={merchant.id} className="px-2 py-1 bg-white text-gray-700 rounded-full text-xs border border-orange-100">
-                    {merchant.name}
+                {['🍲 火锅', '🍱 日料', '🥘 粤菜', '🔥 烧烤'].map((cat) => (
+                  <span key={cat} className="px-2 py-1 bg-white text-gray-500 rounded-full text-xs border border-orange-100">
+                    {cat}
                   </span>
                 ))}
+                <span className="px-2 py-1 bg-orange-50 text-orange-500 rounded-full text-xs border border-orange-100">数据接入中…</span>
               </div>
             </Link>
 

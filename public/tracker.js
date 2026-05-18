@@ -12,7 +12,7 @@
   'use strict';
 
   var SUPABASE_URL = 'https://kcckvvurgbmyvkzknelv.supabase.co';
-  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtjY2t2dnVyZ2JteXZremtuZWx2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUxMjM3MzcsImV4cCI6MjA5MDY5OTczN30.DpJa2UA-MhdrKWmyWT5Mpk5oRKYST2BA9EiaiTYwADA';
+  var SUPABASE_ANON_KEY = 'sb_publishable_Mkndd2Umq37bhmFBoNkfSA_3VmIfLCo';
 
   // 自动识别站点
   var hostname = window.location.hostname;

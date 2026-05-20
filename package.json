@@ -4,7 +4,7 @@
   "description": "点评 Source生活服务类网站复刻",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp -r functions dist/functions",
     "preview": "vite preview",
     "start": "vite preview"
   },

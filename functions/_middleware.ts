@@ -204,9 +204,14 @@ export const onRequest: PagesFunction = async (context) => {
     }),
   }).catch(() => { /* 心跳失败不影响页面 */ });
 
-  // 并行执行两个写入
-  context.waitUntil(Promise.all([writeCrawlerVisit, writeHeartbeat]));
-
-  // 正常返回页面（不做任何修改）
-  return context.next();
+  // 并行执行两个写入，同时获取状态写入响应头方便调试
+  const response = await context.next();
+  const [cvResult, hbResult] = await Promise.allSettled([writeCrawlerVisit, writeHeartbeat]);
+  const cvStatus = cvResult.status === 'fulfilled' ? cvResult.value.status : 'err:' + cvResult.reason;
+  const hbStatus = hbResult.status === 'fulfilled' ? hbResult.value.status : 'err:' + hbResult.reason;
+  const newResponse = new Response(response.body, response);
+  newResponse.headers.set('X-GEO-CV', String(cvStatus));
+  newResponse.headers.set('X-GEO-HB', String(hbStatus));
+  newResponse.headers.set('X-GEO-Crawler', crawlerName);
+  return newResponse;
 };

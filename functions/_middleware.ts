@@ -99,7 +99,7 @@ const AI_CRAWLERS: {
 // 可疑 Bot 模式（match_status = 'unknown_suspect'）
 // UA 包含 bot/spider/crawler 关键词但不在已知列表中
 // ============================================================
-const SUSPECT_BOT_PATTERN = /\b(bot|spider|crawler|scraper|archiver|fetcher|wget|curl|python-requests|go-http|java|libwww)\b/i;
+const SUSPECT_BOT_PATTERN = /(bot|spider|crawler|scraper|archiver|fetcher|wget|curl|python-requests|go-http|java|libwww)/i;
 // 排除：浏览器内核（包含 KHTML/Trident/Gecko 的是真实浏览器）
 const BROWSER_ENGINE_PATTERN = /KHTML|Trident|Gecko|WebKit|AppleWebKit/;
 
@@ -157,56 +157,65 @@ export const onRequest: PagesFunction = async (context) => {
 
   const now = new Date().toISOString();
 
-  // ---- 1. 异步写入爬虫访问记录（不阻塞页面响应）----
-  const writeCrawlerVisit = fetch(`${SUPABASE_URL}/rest/v1/crawler_visits`, {
-    method: 'POST',
-    headers: {
-      'Content-Type':  'application/json',
-      'apikey':        SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-      'Prefer':        'return=minimal',
-    },
-    body: JSON.stringify({
-      // === 原有字段 ===
-      site:             SITE_NAME,
-      crawler_name:     crawlerName,
-      crawler_company:  crawlerCompany,
-      region:           region,
-      user_agent:       ua.substring(0, 500),
-      request_path:     url.pathname + url.search,
-      ip_address:       request.headers.get('cf-connecting-ip') || request.headers.get('x-real-ip') || '',
-      visited_at:       now,
-      // === v3.0 新增字段 ===
-      match_status:         matchStatus,
-      suspect_reason:       suspectReason,
-      hostname:             hostname,
-      env:                  env,
-      collector_version:    COLLECTOR_VERSION,
-      site_id:              SITE_NAME,   // ← 必须写！cv_clean/RPC 全用 site_id 过滤
-    }),
-  }).catch(() => { /* 写入失败不影响页面 */ });
+  // ---- 1. await 阻塞写入爬虫访问记录 ----
+  let writeStatus = 0;
+  try {
+    const r = await fetch(`${SUPABASE_URL}/rest/v1/crawler_visits`, {
+      method: 'POST',
+      headers: {
+        'Content-Type':  'application/json',
+        'apikey':        SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Prefer':        'return=minimal',
+      },
+      body: JSON.stringify({
+        // === 原有字段 ===
+        site:             SITE_NAME,
+        crawler_name:     crawlerName,
+        crawler_company:  crawlerCompany,
+        region:           region,
+        user_agent:       ua.substring(0, 500),
+        request_path:     url.pathname + url.search,
+        ip_address:       request.headers.get('cf-connecting-ip') || request.headers.get('x-real-ip') || '',
+        visited_at:       now,
+        // === v3.0 新增字段 ===
+        match_status:         matchStatus,
+        suspect_reason:       suspectReason,
+        hostname:             hostname,
+        env:                  env,
+        collector_version:    COLLECTOR_VERSION,
+        site_id:              SITE_NAME,
+      }),
+    });
+    writeStatus = r.status;
+  } catch (e) {
+    writeStatus = -1;
+  }
 
-  // ---- 2. 异步 upsert 心跳（每次识别到爬虫时更新 last_seen_at）----
-  const writeHeartbeat = fetch(`${SUPABASE_URL}/rest/v1/collector_heartbeat`, {
-    method: 'POST',
-    headers: {
-      'Content-Type':  'application/json',
-      'apikey':        SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-      'Prefer':        'return=minimal,resolution=merge',
-    },
-    body: JSON.stringify({
-      site_id:          SITE_NAME,
-      collector_type:   'middleware',
-      collector_version: COLLECTOR_VERSION,
-      last_seen_at:     now,
-      last_crawler_name: crawlerName,
-    }),
-  }).catch(() => { /* 心跳失败不影响页面 */ });
+  // ---- 2. await 阻塞 upsert 心跳 ----
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/collector_heartbeat`, {
+      method: 'POST',
+      headers: {
+        'Content-Type':  'application/json',
+        'apikey':        SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Prefer':        'return=minimal,resolution=merge',
+      },
+      body: JSON.stringify({
+        site_id:          SITE_NAME,
+        collector_type:   'middleware',
+        collector_version: COLLECTOR_VERSION,
+        last_seen_at:     now,
+        last_crawler_name: crawlerName,
+      }),
+    });
+  } catch (_) { /* ignore */ }
 
-  // 并行执行两个写入
-  context.waitUntil(Promise.all([writeCrawlerVisit, writeHeartbeat]));
-
-  // 正常返回页面（不做任何修改）
-  return context.next();
+  // 返回页面响应，附加调试头
+  const resp = await context.next();
+  const newHeaders = new Headers(resp.headers);
+  newHeaders.set('X-GEO-Write-Status', String(writeStatus));
+  newHeaders.set('X-GEO-Crawler', crawlerName);
+  return new Response(resp.body, { status: resp.status, headers: newHeaders });
 };
